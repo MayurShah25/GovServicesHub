@@ -26,7 +26,9 @@ const IndustriesSection = () => {
             const Icon = industry.icon;
             return (
               <div key={index} className="industry-card">
-                <Icon size={40} className="industry-icon" />
+                <div className="industry-icon-wrapper">
+                  <Icon size={42} />
+                </div>
                 <h3>{industry.name}</h3>
               </div>
             );

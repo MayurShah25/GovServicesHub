@@ -1,39 +1,64 @@
 import React from 'react';
+import Button from '../Button';
 import './AboutSection.css';
 
 const AboutSection = () => {
   return (
     <section className="section" id="about">
-      <div className="container about-container">
-        <div className="about-content">
-          <div className="badge">About Us</div>
-          <h2>Dedicated to Empowering Government Innovation</h2>
-          <p className="about-desc">
-            At Gov Services Hub, we understand the critical nature of public sector projects. We provide top-tier IT staffing and technology solutions tailored specifically for government agencies, ensuring compliance, security, and efficiency.
-          </p>
-          
-          <div className="stats-grid">
-            <div className="stat-item">
-              <h3 className="stat-number">10+</h3>
-              <p className="stat-label">Years Experience</p>
-            </div>
-            <div className="stat-item">
-              <h3 className="stat-number">50+</h3>
-              <p className="stat-label">Federal Clients</p>
-            </div>
-            <div className="stat-item">
-              <h3 className="stat-number">100%</h3>
-              <p className="stat-label">Compliance</p>
-            </div>
+      <div className="container">
+        <div className="about-header-row">
+          <div className="about-header-left">
+            <div className="hero-tag">ABOUT US</div>
+            <h2>Connecting Elite Talent with Mission-Driven Organizations</h2>
+          </div>
+          <div className="about-header-right">
+            <Button to="/contact" variant="primary">Contact Us</Button>
           </div>
         </div>
         
-        <div className="about-image-wrapper">
-          <img 
-            src="/assets/about.png" 
-            alt="About Gov Services Hub" 
-            className="about-image" 
-          />
+        <div className="about-container">
+          <div className="about-content">
+            <div className="about-metrics" style={{ marginBottom: '40px' }}>
+              <div className="about-metric-card">
+                <div className="metric-number">10+</div>
+                <div className="metric-text">
+                  <h4>Years Experience</h4>
+                  <p>Proven track record in talent acquisition.</p>
+                </div>
+              </div>
+              <div className="about-metric-card">
+                <div className="metric-number">50+</div>
+                <div className="metric-text">
+                  <h4>Partners</h4>
+                  <p>Trusted across public and private sectors.</p>
+                </div>
+              </div>
+              <div className="about-metric-card">
+                <div className="metric-number">100%</div>
+                <div className="metric-text">
+                  <h4>Compliance</h4>
+                  <p>Adherence to federal security standards.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="about-context-highlight">
+              <p className="about-desc" style={{ marginBottom: '0' }}>
+                At Gov Services Hub, we know that people solve problems, not just technology. We specialize in sourcing and deploying top-tier, cleared technical professionals for Federal, State, and Commercial missions.
+              </p>
+              <p className="about-desc" style={{ marginTop: '16px', marginBottom: '0' }}>
+                From agile developers to cybersecurity experts, our rigorous talent acquisition process delivers scalable, compliant workforces that seamlessly integrate with your teams to drive operational excellence.
+              </p>
+            </div>
+          </div>
+          
+          <div className="about-image-wrapper">
+            <img 
+              src="/assets/about-unique.png" 
+              alt="About Gov Services Hub" 
+              className="about-image" 
+            />
+          </div>
         </div>
       </div>
     </section>
