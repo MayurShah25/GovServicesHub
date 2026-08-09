@@ -11,7 +11,7 @@
 <header class="header">
     <div class="container header-content">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo">
-            Gov Services <span class="logo-accent">Hub</span>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/logo.png" alt="Gov Services Hub" class="header-logo-img" style="max-height: 90px;" />
         </a>
         
         <nav class="desktop-nav" id="main-nav">
